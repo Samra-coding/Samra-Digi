@@ -1,0 +1,32 @@
+.carousel-card {
+    width: 50px; /* Normal card width */
+    text-align: center;
+    margin:10px;
+    padding:3px 3px ;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+  }
+  
+  /* Center card - large size */
+  .slick-center .carousel-card {
+    width: 50px; /* Large size when centered */
+    transform: scale(1.1) rotateY(0deg);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Adjacent cards - normal size */
+  .slick-slide:not(.slick-center):nth-child(n+1):nth-child(-n+2) .carousel-card {
+    width: 50px; /* Normal size */
+    transform: scale(0.8) rotateY(-5deg);
+    opacity: 0.9;
+  }
+  
+  /* Other cards - small size */
+  .slick-slide:not(.slick-center):not(:nth-child(n+1):nth-child(-n+2)) .carousel-card {
+    width: 70px; /* Small size */
+    transform: scale(0.8) rotateY(-10deg);
+    opacity: 0.7;
+  }
+  

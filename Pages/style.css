@@ -1,0 +1,56 @@
+.horizontal-scroll {
+    position: absolute ;
+    
+}
+
+.icon-container {
+    display: flex;
+    animation: scrollAnimation 19s linear infinite;
+    width: calc(100% + 440px);
+}
+
+
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translatex(100vw);
+    }
+
+    100% {
+        transform: translatex(-100%);
+    }
+}
+
+.rotating-elements {
+    position: absolute;
+    animation: rotateForwards 7s linear infinite;
+}
+
+@keyframes rotateForwards {
+    0% {
+        transform: rotate(310deg);
+    }
+    50% {
+        transform: rotate(450deg);
+    }
+    100% {
+        transform: rotate(310deg);
+    }
+}
+
+.rotating-element {
+    position: absolute;
+    animation: rotateForward 7s linear infinite;
+}
+
+@keyframes rotateForward {
+    0% {
+        transform: rotate(320deg);
+    }
+    50% {
+        transform: rotate(445deg);
+    }
+    100% {
+        transform: rotate(320deg);
+    }
+}
